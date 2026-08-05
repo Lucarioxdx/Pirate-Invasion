@@ -15,7 +15,7 @@ let angle;
 let cannonBall;
 
 function preload (){
-    backgroundImg = loadImage ("assets/background.gif");
+    backgroundImg = loadImage ("Assets/background.gif");
 }
 
 function setup (){
