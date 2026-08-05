@@ -47,4 +47,18 @@ class CannonBall {
             y: velocity.y * (180/ 3.14),
         })
     }
+    remove (index) {
+        this.isSink = true;
+        Matter.Body.setVelocity (this.body, {x : 0, y : 0});
+        this.animation = waterSplashAnimation;
+        this.speed = 0.05;
+        this.r = 150;
+        setTimeout (()=>{
+            Matter.World.remove (world, this.body);
+            delete balls [index];
+        }, 1000);
+    }
+    animate () {
+        this.speed += 0.5 % 1.1;
+    }
 }
