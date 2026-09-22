@@ -31,7 +31,7 @@ Jogo com o tema " invasão pirata ", utilizando motores de física.
 1. Clone ou baixe este repositório.
 
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO
+git clone https://github.com/Lucarioxdx/Pirate-Invasion
 ```
 
 2. Abra o arquivo `index.html` em seu navegador.
@@ -46,5 +46,5 @@ git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO
 - **Isenção de Garantia:** O software é fornecido "como está", sem garantias de qualquer tipo, explícitas ou implícitas. Os autores não são responsáveis por quaisquer danos decorrentes do uso do software.
 
 ## 👩🏻‍💻 Autor(es)
-- [@alinetakai](https://github.com/alinetakai)
+- [@Lucarioxdx](https://github.com/Lucarioxdx)
 
