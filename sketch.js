@@ -62,7 +62,7 @@ function setup (){
 
     ground = new Ground (0, height -1, width *2, 1);
     tower = new Tower (150, 350, 160, 310);
-    cannon = new Cannon (170, 110, 130, 100, angle);
+    cannon = new Cannon (180, 110, 130, 100, angle);
     cannonBall = new CannonBall (cannon.x, cannon.y);
 
     let boatFrames = boatSpriteData.frames;
@@ -135,7 +135,7 @@ function keyPressed (){
     if (keyCode === DOWN_ARROW){
         let cannonBall = new CannonBall (cannon.x, cannon.y);
         cannonBall.trajectory = [];
-        Matter.Body.setAngle (cannonBall.Body, cannon.angle);
+        Matter.Body.setAngle (cannonBall.body, cannon.angle);
         balls.push (cannonBall);
     }
 }
@@ -152,7 +152,7 @@ function showCannonBalls (ball, index){
         ball.display ();
         ball.animate ();
         
-        if (ball.body.position.x >= width || ball.body.position.y >= weight - 50){
+        if (ball.body.position.x >= width || ball.body.position.y >= height - 50){
             if (!ball.isSink){
                 waterSound.play ();
                 ball.remove (index);
@@ -214,7 +214,7 @@ function gameOver (){
             title: "Fim de jogo!",
             text: "Obrigado por jogar!",
             imageUrl: "https://raw.githubusercontent.com/whitehatjr/PiratesInvasion/main/assets/boat.png",
-            imageSize: "150,150",
+            imageSize: "150x150",
             confirmButtonText: "Jogar novamente",
         },
         function (isConfirm) {

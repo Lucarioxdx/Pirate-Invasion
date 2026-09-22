@@ -46,6 +46,6 @@ class Boat {
     }
 
     animate () {
-        this.speed += 0.5 % 1.1;
+        this.speed += 0.05 % 1.1;
     }
 }
